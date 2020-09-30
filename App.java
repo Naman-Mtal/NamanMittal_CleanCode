@@ -3,11 +3,11 @@ import java.util.*;
 
 class InterestCalculator
 {
-	public static double calculateSI(double principal,double rate , int time)
+	public static double calculateSI(double principal, double rate, int time)
 	{
 		return (principal*rate*time)/100;
 	}
-	public static double calculateCI(double principal,double rate , int time)
+	public static double calculateCI(double principal, double rate, int time)
 	{
 		double amount = principal * Math.pow(1+rate/100, time);
 		return amount - principal;
